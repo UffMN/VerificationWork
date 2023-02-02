@@ -88,3 +88,44 @@ fastw.Stop();
 Console.WriteLine($"time = {fastw.ElapsedMilliseconds} ms");
 */
 
+//Big O Notation
+/*
+int[] array = new int[5];
+for (int i = 0; i < 5; i++)
+    array[i] = new Random().Next(1, 10);
+Console.WriteLine(string.Join(" ", array));
+Console.WriteLine(array[3]); //Algorithm complexity "0 notation" equal to 0(1) because we need one action to find out the result
+// [4, 5, 3, 1, 2] it will take 5 operations to find out the sum of the array => 0(5)
+// 0(n)
+// [1, 2, 3, 4, 5] => 0(n * log n) - time of quicksort
+// ((5 + 1) / 2) * 5 [the sum of the arithmetic progression] => 0(1)
+// n < n * log(n) + 1*/
+
+/*// 0(n^2)
+int n = Convert.ToInt32(Console.ReadLine());
+for (int i = 1; i < n + 1; i++)
+{
+    for (int j = 1; j < n + 1; j++)
+    {
+        Console.Write($"{i * j}\t");
+    }
+    Console.WriteLine();
+}
+
+int[,] matrix = new int[n, n];
+for (int i = 0; i < n; i++)
+{
+    for (int j = i; j < n; j++)
+    {
+        matrix[i, j] = (i + 1) * (j + 1);
+        matrix[j, i] = (i + 1) * (j + 1);
+    }
+}
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < n; j++)
+    {
+        Console.Write($"{matrix[i, j]}\t");
+    }
+    Console.WriteLine();
+}*/
